@@ -1,0 +1,53 @@
+name = "StochasticPrograms"
+uuid = "8b8459f2-c380-502b-8633-9aed2d6c2b35"
+authors = ["Martin Biel <martinbiel93@gmail.com>"]
+version = "0.6.4"
+
+[deps]
+Clustering = "aaaa29a8-35af-508c-8bc3-b662a17a0fe5"
+Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+GLPK = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
+Gurobi = "2e9cd046-0924-5485-92f1-d5272153d98b"
+Ipopt = "b6b21f68-93f8-5de0-b562-5493be1d77c9"
+JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
+JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+MathOptInterface = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
+MutableArithmetics = "d8a4904e-b15c-11e9-3269-09a3773c0cb0"
+OrderedCollections = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
+Parameters = "d96e819e-fc66-5662-9728-84c9c7592b0a"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+Clustering = "0.14"
+Compat = "2.2, 3"
+Distributions = "0.25.0"
+JuMP = "= 1.2.1"
+MacroTools = "0.5.3"
+MathOptInterface = "= 1.3.0"
+MutableArithmetics = "= 1.0.4"
+OrderedCollections = "1.2.0"
+Parameters = "0.12"
+ProgressMeter = "1.4.1"
+Reexport = "1.0.0"
+julia = "1"
+
+[extras]
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+GLPK = "60bf3e95-4087-53dc-ae20-288a0d20c6a6"
+Ipopt = "b6b21f68-93f8-5de0-b562-5493be1d77c9"
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "Logging", "GLPK", "Ipopt", "Distributions"]

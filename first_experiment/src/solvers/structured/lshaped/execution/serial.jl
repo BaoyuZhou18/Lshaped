@@ -209,6 +209,7 @@ function resolve_subproblems!(lshaped::AbstractLShaped, execution::SerialExecuti
         update_subproblem!(subproblem)
         cut::SparseHyperPlane{T} = subproblem(lshaped.x, execution.metadata)
         added |= aggregate_cut!(lshaped, lshaped.aggregation, cut)
+    end
 
     added |= flush!(lshaped, lshaped.aggregation)
 

@@ -51,8 +51,6 @@ else
     stepsize_value = (0.1)^(2)
 end
 
-include("../test/decisions/decisions.jl")
-
 # Include suitable problems
 prob_name = Prob[prob_num:prob_num, :]
 if cmp(prob_name[1], "SH31") == 0
